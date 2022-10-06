@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    8. What is box-sizing?
+    8. What is box-sizing?<br><br>
 
 Box-sizing property defines how the width and height gets applied on an element.
 Default value of box-sizing is content-box, in this case the actual width of the box
 will be equal to the border and padding and width of the box ( Actual width : width
-+ border + padding ).
++ border + padding ).<br>
 In case when box-sizing is set to be border-box, then the actual width will be equal
 to the width of the box itself. Means if we will increase the padding or border of
-the box then it will not increase the width of the box.
+the box then it will not increase the width of the box.<br>
 
-a) content-box (Default)
-b) border-box
+a) content-box (Default)<br>
+b) border-box<br>
 
-Example:
 
-HTML:-
-<div class="content-box">Content box</div>
-<br>
-<div class="border-box">Border box</div>
+
+
+<pre>
 
 CSS:-
 div {
@@ -42,17 +41,22 @@ box-sizing: content-box;
 box-sizing: border-box;
 }
 
-9. What is animation-delay?
+Example:
+</pre>
+<div class=" cont content-box">Content box</div>
+<br>
+<div class="cont border-box">Border box</div>
+
+<br><br>
+9. What is animation-delay?<br>
 
 It is a sub-property of CSS animation. It defines how long the animation has to
 wait before starting. Using the animation-delay property, you define the delay by
-specifying the number of seconds or milliseconds it should take before playing.
+specifying the number of seconds or milliseconds it should take before playing.<br>
 
-HTML:-
-<div></div>
-
+<pre>
 CSS:-
-div {
+.ba {
 width: 100px;
 height: 100px;
 background: red;
@@ -65,25 +69,21 @@ from {left: 0px;}
 to {left: 200px;}
 }
 
+OUTPUT:-
+</pre>
+<div class="ba"></div>
 
-10. Which property will you use to merge cells Vertically in a grid?
+<br><br>
+10. Which property will you use to merge cells Vertically in a grid?<br>
 
 grid-column-start and grid-column-end property can be used to merge cells
 vertically. It also has a shorthand i.e., grid-column: start/end. If you want to merge
 two elements in row then we will have to use grid-row property inside the child
 element. Remember these properties are applicable only to child elements not to
-parent elements.
+parent elements.<br>
 
-HTML:-
-<div class="grid-container">
-<div class="item item1">1</div>
-<div class="item">2</div>
-<div class="item">3</div>
-<div class="item">4</div>
-<div class="item">5</div>
-<div class="item">6</div>
-</div>
 
+<pre>
 CSS:-
 .grid-container {
 display: grid;
@@ -102,19 +102,22 @@ border-radius: 20px;
 grid-column: 1/3;
 }
 
-11. Which property will you use to merge cells horizontally in a grid?
-grid-row-start and grid-row-end property can be used to merge cells horizontally. It
-also has a shorthand i.e., grid-row: grid-row-start/grid-row-end;
-
-HTML:-
+OUTPUT:-
+</pre>
 <div class="grid-container">
-<div class="item item1">1</div>
-<div class="item">2</div>
-<div class="item">3</div>
-<div class="item">4</div>
-<div class="item">5</div>
-<div class="item">6</div>
-</div>
+    <div class="item item1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    </div>
+    <br><br><br>
+11. Which property will you use to merge cells horizontally in a grid?<br>
+grid-row-start and grid-row-end property can be used to merge cells horizontally. It
+also has a shorthand i.e., grid-row: grid-row-start/grid-row-end;<br>
+
+<pre>
 
 CSS:-
 .grid-container {
@@ -134,24 +137,37 @@ border-radius: 20px;
 grid-row: 1/4;
 }
 
-12. What is a Box-model?
+OUTPUT:-
+</pre>
+<div class="grid-container">
+    <div class="item item1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    </div>
+  <br>  
+  <br>  
+  <br>  
+  12. What is a Box-model?<br>
 
 The box model in CSS is a set of rules that determine how your web page is
 rendered on the internet. In this model, a rectangular box is generated for HTML
 elements. This box consists of first content, then padding, then border, and finally
-margin.
+margin.<br><br><br>
 
-13. What is the difference between display none and visibility hidden?
+13. What is the difference between display none and visibility hidden?<br>
 
-display: none;
+display: none;<br>
 ● The display: none property is used to hide elements without deleting them. It
-does not take up any space.
+does not take up any space.<br>
 ● In this case, the tag is removed from the page, which allows other elements
-to fill in.
+to fill in.<br><br>
 
-visibility: hidden;
+visibility: hidden;<br>
 ● The visibility: hidden property also hides an element, but affects the layout
-i.e., it takes up the space.
+i.e., it takes up the space.<br>
 ● The element is hidden from view but not the page flow.
 </body>
 </html>
